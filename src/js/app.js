@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 5000
 app.use(express.static(path.join('C:/Users/jpena208/Documents/GitHub/josepena-website')));
 
 app.get("/", function (req, res) {
-    res.sendFile("C:/Users/jpena208/Documents/GitHub/josepena-website/index.html");
+    res.sendFile("C:/Users/jpena208/Documents/GitHub/josepena-website/public/index.html");
 });
 
 app.listen(PORT, function () {

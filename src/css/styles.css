@@ -76,7 +76,23 @@
   }
 }
 
+@font-face{
+  font-family: "segoeui";
+  src: url('/public/assets/fonts/Segoe\ UI.ttf');
+}
+
+.segoeui-font{
+  font-family: "segoeui";
+}
+
 body {
+  /* Background for the page, needs mobile and desktop versions */
+  /* background: url(public/assets/img/profile.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+
   margin: 0;
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
@@ -131,6 +147,7 @@ h2, .h2 {
 h3, .h3 {
   font-size: calc(1.325rem + 0.9vw);
 }
+
 @media (min-width: 1200px) {
   h3, .h3 {
     font-size: 2rem;
@@ -598,6 +615,11 @@ progress {
 }
 .blockquote-footer::before {
   content: "— ";
+}
+
+.nav-img-top{
+  max-width: 40px;
+  margin-right: 5px;
 }
 
 .img-fluid {
@@ -4078,6 +4100,11 @@ textarea.form-control-lg {
   padding-bottom: 0.5rem;
 }
 
+.navbar-name{
+  color: #fff;
+  font-family: "segoeui";
+}
+
 .navbar-collapse {
   flex-basis: 100%;
   flex-grow: 1;
@@ -4334,6 +4361,7 @@ textarea.form-control-lg {
     overflow-y: visible;
   }
 }
+
 @media (min-width: 1400px) {
   .navbar-expand-xxl {
     flex-wrap: nowrap;
@@ -11384,6 +11412,15 @@ p.lead {
     display: block;
   }
 }
+
+.interests-icons{
+  margin-right: .25em;
+}
+
+.interest:hover .interests-icons{
+  color: var(--bs-primary);
+}
+
 .social-icons .social-icon {
   display: inline-flex;
   align-items: center;
@@ -11403,10 +11440,21 @@ p.lead {
   background-color: #bd5d38;
 }
 
+.section-buttons{
+  color: #fff;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+  max-width: 45%;
+}
+
+#contact-button{
+  display: inline-block;
+  margin: 0 auto;
+}
+
 .skills-icons-img{
   height: 1.7rem;
   width: 1.7rem;
-  
 }
 
 .skillsContainer {
@@ -11465,6 +11513,7 @@ section.resume-section {
   padding-bottom: 5rem;
   max-width: 75rem;
 }
+
 section.resume-section .resume-section-content {
   width: 100%;
 }
