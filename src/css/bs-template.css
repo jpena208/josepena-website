@@ -11742,7 +11742,7 @@ p.lead {
     left: 0;
     display: flex;
     flex-direction: column;
-    width: 17rem;
+    width: 13rem;
     height: 100vh;
   }
   #sideNav .navbar-brand {

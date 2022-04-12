@@ -14,6 +14,18 @@ body {
   font-size: 2rem;
 }
 
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 576px) {
+  .text-sm {
+    font-size: 0.8rem;
+  }
+}
+
 /* Customize the navbar
 -------------------------------------------------- */
 .navbar-name {
@@ -94,6 +106,49 @@ ul.skillsGrid {
 
 /* Experience
 -------------------------------------------------- */
+.content-row {
+  padding-left: 24px;
+}
+
+.card {
+  border: none;
+  border-radius: 0%;
+  width: 100%;
+}
+
+/* Edit the card image */
+.card-img {
+  border-radius: 0%;
+  filter: brightness(0.8);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Edit the content overlaying card image */
+.card-title {
+  font-size: 20px; /* Font size fallback for vw */
+  font-size: 0.31vmin;
+  font-weight: 500;
+  margin: 0;
+  line-height: normal;
+}
+
+.circle {
+  /* background primary color */
+  background-color: #bd5d38;
+  border-radius: 50%;
+  width: 1vmax;
+  height: 1vmax;
+  transition: all 0.3s ease-in-out;
+}
+
+.circle-animation {
+  transform: scale(10);
+}
+
+.img-animation {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
 
 /* Education
 -------------------------------------------------- */
@@ -221,4 +276,12 @@ ul.skillsGrid {
 #fs-frm fieldset.locale input[name="city"],
 #fs-frm fieldset.locale select[name="state"] {
   margin-right: 3%;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media screen and (min-width: 556px) and (max-width: 1256px) {
+  .card-title {
+    font-size: 0.2vmin;
+  }
 }
