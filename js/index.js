@@ -20,18 +20,17 @@ function addAnimatedClass() {
     function () {
       $(this).find(".card-img").addClass("img-animation");
 
-      $(this).find(".circle").addClass("circle-animation");
-      $(this).find(".circle").removeClass("visually-hidden");
-      setTimeout(() => {
-        $(this).find(".card-title").removeClass("visually-hidden");
-      }, 500);
+      $(this).find(".view-project-btn").addClass("view-project-btn-animation");
+      $(this).find(".view-project-btn").removeClass("visually-hidden");
     },
     function () {
       $(this).find(".card-img").removeClass("img-animation");
 
-      $(this).find(".circle").removeClass("circle-animation");
+      $(this)
+        .find(".view-project-btn")
+        .removeClass("view-project-btn-animation");
       setTimeout(() => {
-        $(this).find(".circle").addClass("visually-hidden");
+        $(this).find(".view-project-btn").addClass("visually-hidden");
       }, 200);
     }
   );

@@ -20,7 +20,10 @@
   },
   "homepage": "https://github.com/jpena208/josepena-website#readme",
   "dependencies": {
+    "autoprefixer": "^10.4.4",
+    "bootstrap": "^5.1.3",
     "express": "^4.17.1",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "sass": "^1.50.0"
   }
 }
