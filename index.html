@@ -28,15 +28,11 @@
     />
 
     <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;673&family=Open+Sans:wght@300;400;500;700&display=swap"
       rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i"
-      rel="stylesheet"
-      type="text/css"
     />
 
     <!-- Custom bootstrap scss -->
@@ -68,7 +64,8 @@
             src="public/assets/img/profile.png"
             alt="..."
           />
-          <p class="navbar-name my-0">Jose Pena</p>
+          <h5 class="navbar-name my-0">Jose Pena</h5>
+          <hr class="my-2" />
         </span>
       </a>
       <button
@@ -118,71 +115,25 @@
         <!-- About-->
         <section class="resume-section" id="about">
           <div class="resume-section-content">
-            <!-- Small to medium screen larger text for cooler stacking-->
-            <h1 class="d-block d-lg-none mb-5">
-              Programming
-              <span class="text-primary">Praiseworthy</span>
-              Projects!
-            </h1>
-
-            <!-- large screen -->
             <div>
-              <h1 class="d-none d-lg-block mt-5">Programming</h1>
-              <h1 class="d-none d-lg-block text-primary">Praiseworthy</h1>
-              <h1 class="d-none d-lg-block mb-5">Projects!</h1>
+              <h1 class="mt-5">Programming</h1>
+              <h1 class="text-primary">Praiseworthy</h1>
+              <h1 class="mb-5">Projects!</h1>
             </div>
 
             <h3 class="text-title">
-              Hello, I'm
-              <span class="text-secondary"> Jose Peña.</span>
+              Hello, <br />
+              I'm <span class="text-secondary"> Jose Peña.</span>
+              <br />
             </h3>
-            <h3 class="text-title">Web, app, and game developer.</h3>
-            <p class="lead mb-5">
+            <h6 class="fs-7 mb-4">Web, app, and game developer.</h6>
+
+            <h6 class="fw-normal fs-7 mb-5">
               I serve smart software solutions by programming praiseworthy
               projects. I am a Computer Science graduate seeking to incorporate
               the academic knowledge and experience gained throughout my
               collegiate career within your exceptional Company.
-            </p>
-
-            <!-- Section buttons only for small to medium screens -->
-            <!-- <div class="row">
-              <a
-                class="section-buttons btn btn-primary d-block d-lg-none col-6 mb-2"
-                href="#skills"
-                role="button"
-              >
-                Skills
-              </a>
-              <a
-                class="section-buttons btn btn-primary d-block d-lg-none col-6 mb-2"
-                href="#experience"
-                role="button"
-              >
-                Experience
-              </a>
-              <a
-                class="section-buttons btn btn-primary d-block d-lg-none col-6 mb-2"
-                href="#education"
-                role="button"
-              >
-                Education
-              </a>
-              <a
-                class="section-buttons btn btn-primary d-block d-lg-none col-6 mb-2"
-                href="#interests"
-                role="button"
-              >
-                Interests
-              </a>
-              <a
-                id="contact-button"
-                class="section-buttons btn btn-primary d-block d-lg-none col-6 mb-2"
-                href="#contact"
-                role="button"
-              >
-                Contact Me
-              </a>
-            </div> -->
+            </h6>
           </div>
         </section>
         <hr class="m-0" />
@@ -300,6 +251,7 @@
                     <div class="icon-animate">
                       <img
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png"
+                        loading="lazy"
                       />
                       <p>Html</p>
                     </div>
@@ -310,6 +262,7 @@
                     <div class="icon-animate">
                       <img
                         src="https://cdn-icons-png.flaticon.com/512/919/919826.png"
+                        loading="lazy"
                       />
                       <p>CSS</p>
                     </div>
@@ -320,6 +273,7 @@
                     <div class="icon-animate">
                       <img
                         src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                        loading="lazy"
                       />
                       <p>JavaScript</p>
                     </div>
@@ -328,7 +282,10 @@
                 <li>
                   <div class="itemContainer icon-container">
                     <div class="icon-animate">
-                      <img src="public/assets/img/icons/ExpressJSIcon.jpg" />
+                      <img
+                        src="public/assets/img/icons/ExpressJSIcon.jpg"
+                        loading="lazy"
+                      />
                       <p>Express JS</p>
                     </div>
                   </div>
@@ -338,6 +295,7 @@
                     <div class="icon-animate">
                       <img
                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAADwCAMAAABCI8pNAAAA/FBMVEX///8Dr+8vQGojeb35+focdrxSkcgXL2EAsvIAbbgAqu4ZMGDCxtHv9vsAre8ifMEwPGURK17g4uhFiMQma6kqXJMuRHAnZqExNl8AqO4lcbIxNV4AcLkAbLgwOmQpO2cZjtATmtseg8aj2/gIp+UAJFre8/ys3/iE0PWOtNgRmdQdfbIhNWPB5/rQ7ftawvM3ufElZZVibYrn8Pe65PkWlNYZh74qUX6CiqDV4/Cus8HT1t5zo9BuyPRDvPGT1fYja50oWIbH2uyUmq2kwd9lm8xMWXy2zuY/TnRye5Xo9/2ZttgWn9mywNAfe7cWjsaPlqoAFFMAX6Nwkrj7DikTAAAPl0lEQVR4nO2de1sTyRKHk0kCQzBhohADxEQRFBSviHdUQMXbHj17vv93OT2TuXRVX6a7pueSfbb+2t2HZ+h3pqq6ftXVbKv1r/1rsQ3O2i/qXoNb+9gftvtPH9e9DHf2wu+3Q+ufDepeihu792EBxGw4/Fj3ahzY4Gy7zVnfX/qQ+jgctqH1P9yre1FF7JHfbws27J91614Y1bggwlB3614byQaHfexznPc9fVT3+uztrhBECOrJj7qXaGfSIELet31Y9yot7N6TXKAIqn2/7pWami6IcEgtRY10PyeIoG03P6QePzXyOc77+s2ukX6YBRG0RtdIH42DCEE9bWiN9CI/cauhmig7lNWPmTVPdjAJQfM57kP5jaqR8qofQ6jmyA6D6sfMhv1m1EgFgwhD1V8jdc2rHzOrXXbcbbsFiqDqrJGsqx8zqy+kSNWPmfXrkR2ugwhBVS877CQECarakCopiKBVKTsGZxUAhVaZ7KBKCBJUFSFVREKQoMqWHfTqp0/NJ+XKDnQKYQPEiuwzqsOWKDvIEiLeOQ3be7IHlCM7yBKCa6vSn1FCjVQgiMCWSf7Srk87tKcQeiAcBwUe5VJ2kCVEVgAcZstx9cELGF2H95/EewqrCPlO8SNqPeUmpOgSIt35F58F7C/0715cdpA9fzhMwjndj/i4GhxSu2QFaySyhMiOmMEj+GCgf/7tM3JI0SVE/8Nj+SOAYCgQUrQaiS4hUn/vSh4BBAPZC0iygywhsqx0V/4IUN3QdynbGokuIfpP4l+ldluQiskhNbSSHQU2w3ac1PRuC1IxOWSzpJpndAmRbT25bgtOye5TdylD2SEOMhn/giS5GqUyfpKI3oZO/VxtBaqfZAscGEYH8L4CIaWvkehBNGwnfm2RKkEhUCCk1DUSve5nr2pA+soga9FDSlUj0U8h0j3C3n1g1qKHlCyhFwiiZFy6SypFwSsuEFK4RqJ3OrhnHZ36lCf421fcSsghhWok+ikEX1sfTW8PraF8/+XqNfB66YVfViPRTyFgO+Co1+udtu2g/AevJusQqVBIxU940Cc5jNAHPep1Or2NOxYP8/efTTxPQGr9IKkA9sFH8fa90rtt+W4j206yzIs4wEMkBrW3b/gw3384CzweKUtb9iHl+79fTVZTpE7H5t1GxncWhttR32SBxKCM3hBbwnjmeTzS4TaXiy13Kf/X+a7n8Ujm7zayTOUt/D7ywQSpY/KG2BImnscjvWBP5bcpm8LP3/80CT84jxRCGaer4fZhF7/Kvv/4Z4aU94b89mIJGVJSi/HblOkulXgwRjJ1GC5ZQofv7+9lTOxh6jfE4jiYeR6H1OXGqviOn0lIMQ/2kqdhJCOHybY0UeX5dzq8narWwBK35/FIMG5AJs0NKfA0CVJuSGXFgqwk9Nu3+Q8lTeh++1nmc6Htnu8LV004aacPqXAb4J4mQdI7DFcsqDzCh94nvCHm9hBoNv4t+31mHT8WkrvgaVIktg5lBZAWC7rOAvQ+FJ8scQOfC2YPFb8MSDv5C2Qh6c08zwBJVQFkJzx6LQ+9j49Pf/8cAIU+p3aJnI5ftLV6nhmSPKRSSZIvQ+Te57cf7pr4HPcrNR2/xdZqjiSGVLpdmO0V/p0NlNAFL2E+5+flV+Z9Wc+F/83J1mqDxIxTP5m8N93R/fYp9L5fyEt2nxmVK9KOH8sxgQwoF6m3Ef/SLFJftM2LSX8IvA++1MmrB6alitDx47dWS6QkClKPtu0fAe8DQRTk+xwPxTcWDocPxKxgjsSM5eBk17MXZrz3cUFk6HOZZR01Zn+N5D5njNSZdhOfoyhNf/gfjDR79ctenHHF7LV1NZEZ0lr80W9YK6oF02+EZOdzHFTifQ6RLBXVAmj/fBcj7RB6LqEP37zuHslYfGTLYBVYICBpKi7lk/yXs4MykDpWej7eWyVIlj2XWD+MSkKy6JXEuTZBCmbxv+/YPSfVD2Uh5YkPbhlxBRYj9VjijnbIBZK5hE7VSHlIkfjIX0ZasATZR4kaDgmSoRenbaRSkXJDIVtGgpT8fJgBN7Pn5Hofr0ZKRdIvJlw290sC6GL+7x3DngvWrCUjqaUv6GaFtovowyKJf5TytAOrkdKR5N4niKJZ8FL4KVSiK7wYt5EqQJL2StAygskn6bf094FAlPREw4yJqtMqkHAizhJ3bJNzdYGq67nIJV41SB0uEWdN3Nhm3m9NgeoPVT0XlDGrR0p7JWgZ+Z0FVccPZczqkeJeCV6GtpuVQkm8z28/lPZJKkVidop9Lq+blTChjt+prq1QLdIm7qAaqzzsfefqtkLFSPw3suwsMO/Lnryj+kR1Ik3Gxt2s1PuynsuOplNSGxKls5B5XxORaD2XNPc1EGncoYwbsMpwvNFYpA3CuEFUGTYaKW2lGwJFAyrNRrIaN0grw4Yj6c5GEVFaGTYeyaxTx1eGzUcy6JWwApWrDJcBKadThwvU5UDqaBI6NxS1ZEgK7xPaSEuEJO3UhccQwtLrQNqjIXWE6Sihm2WGdHx84hrpzcqa8sf0SCChx8WCLdL84E8yAOEOqdW6uDElIXEhJQyoGCKNnl9PVuEUqdW66sih8pCSkJJ3s3KRjj1+RNktUqv1U+p9+UidMKHjoSgzpPnBJb8C50itwXvJDxsh9TYVPqdHGj0/aZWL1GodirnPCGljS0OkQpqNhbF450j3ng7hFFeZSMHuw7ZwNckxUnzzETSqykOaRC1b/BcR3CKlf1LDb5+WjpS2bNHVJJdIYMAUnDwkSMHMGVLoc+kGDe6aukP6gW/bcr3fGIk5iuZBVkgT1LLlvM8d0ql4IyjNExFS6ChDzZMskCQt22zM0WUlLjkojvMEQ2KO4vttOlInQwomkpat72+WIC5k/YRFntgMFsmJjjReHMuESNjnFkC/x+WMRUkPilme2EyTE/kr+VFo7gTSoddIA5c2FiXpJ/j9veQ/FkCKQnNzV+ZzCw1coqqVjTsk/1AIKYSS+VysgUtE0nWzCiJJOkqZBi53LErZzSqKJABxV3nKbqcoullukeDpetlIiuMJKtLuM9ndLaiBKxiLkh1PDEk1XiA73xU0cCVjUcLxBEu3Wx0VlRIpuClL3ELfpZLWJConwnuYQTC+qWBSIAWvOmJoyvouFXVb+YSejhyPN6VQUqT4h+HGIO+7VDcWFSd0fnIteLUjgZIgBd5WeiCVNpqFK4tVI3Uir8GTawxK+HERaXLOoy8qfcmVxRqQWELHrr97/usO/jGMFIqifTwSKm+YV47ExAWcXIu6Bqg9gZFmi9kpPL/2STqKVwcScLrkqiwajARI6ewUml9r4lgUGC4EjsUhASEOfqh5R2bM52AhwK03RRJuAnK9zuYhSa6QpetNkCTzer6fzK81D2l8W6Lh4gHqBZJKiDf2K403ZLcoWAqIkaS3T8O9NW56NRKpI/3LFVHy2wp2P0mFeLi3NhtJfhtjf29LqiHivbXZSIr2hL8v8bm0Mmw6kuG1OH6KqPlInfzpSR+IoqVAyplfQ3+CYimQtB0/YYpoSZCUISURRUuD1JH3myWiaJmQhJCSTxHlI/3XOdLnqfqncsai+I5fKOlloigPKRu6cXj83H2vhModi0pDSjlFpEear2ZDN06HBE6+KObXDIYEIu9T3YnLQZqPvnNDN45HOd7I59cMkKKErroTp0daH7/jluACCf6f6a82JFBmY1EryjtxOqTj9bdgAa3L46JIvS9o0upzT4ByNp0iIDGfgzNM777qPpIZUqc3PYJMg6NbtLEo3VrkSKvf3sFf/X001z3FEKnTmfauINTJF5j8SkI6nmOfO9ADmSMxqJU38OFvVnjvKwVpPnoNw/jaN63PWSIx73sPnw/mXMtAWv16Hfy+689zfM4WiUGtfYZMLE+gsShv9bkrpONj6HPdP7k+Z4/EvG/vAjJ1j6bcWFRUs6w5QZofIJ976+kyNx2JeR9O6CdfbsVjUeGgcLfVJSPxrUnB576umgHZIzGoW0copFie6DGk+WI4nYz0LQ7NIMxzcEK3+9rM54hIDKqDEnrrYm+6uR7XyfSvFJf67N38QT53bOhzZCQWUjdQQm99/jupk4sgtQbvb/X4mwihvTNI3MWRmPd9Uf3/ZwohhaEJfe7EKHE7QArzxM9SkJBdrloCFUBi3rdxIVuES6RrY5sgKo7ERAeukdwiXf86sgfKkHSdErX11t4LIUVFOkZI3de2QRTbQYyk0Kq5Nu3hGmmAZYcRklgsWCVu8KD0Gaq7VrlQuEZS30RTI+Fi4d0342IBPQjuAEeanpbGemu4RlK+HQUSFkW5Kk9l68K9oLhcs4fCord1JO8jSZEEn7tcJ/rc6LIlGjWkelj0DqQdPxkSLhaueXbFQgb0XbH7X4mdEiOTiF7xS4lI8NpipPJIQCwaYYuCt67QKTEzMaGzYjYHibsqu7A/9sXC4s3gthiykxVinpgKohflCYQk+NycGESr6M1ITHy/ZiYkdJRFAZLgc7RiwZvjN6Mw3SGF9kOtoIQ+eM+FFIeEr8qSiwUxcatMc0ihh7qF+0hvMj9Okeb4quzbEc3ncM9FbyxlUZhYQschldYTCRJ+s+/MOwvAhD5frl1Qa6QbOKRiP14gYZ8jFwujr0ZBBO2nqxppkSdCJOZzMNlfEoFwejE1EN02UEKNdMKetLEVrH+DCzFpCcuMPxS0NbLsEPpILE9sIZ+z7yzEQOBQ0N7IskPoI138D/icaUtYMF31Y2hk2SGKXs6umbaEkQkHNCQjyw4hoadm0RIGJmgRspFDStFHsmkJ80CG1Y+ZXfVcJXR6ZwHny6JGlh04oVOLheORiyCCRpYdvOgdfKf6nKsggqZp/2gtS+iX6xVWP2ZGlh1RQqcWC/jEya2RZcfaZ7PzY9Hm6/Tqx8yosmP6dy3Vj5kRZcdN3byNyvB4SmlGkh0EJDvZWswossMaSTi2LdnsayRLJLfVj5nZyg47JNfVj6HZyQ4bpCqDCJpy2LUYkjsJQTGLkDJGqiGIoBnLDkOkdWLvx6WZyg4jJNzmq8vwXCgZSX3yVb2ZyI58JAe9H5eWLzvykPJOvqq3XNmhR5qv/qmbQGI5skOHVEf1Y2Za2aFBMj/5qsE+q3cpJVLzggiaWnYokMrq/bg0OOifh1Ri78elSS8ESZGoJ181mEzJi0hFTr6qt3CaOAdpflBF78elCbIDITWs+jGzK/i3nwGSm5OvGgxM5nFIwkTUEtmAkx0pUnOrHzPLZEeCVFPvx6VdTaccUhknXzXYojkWIi1D9WNmUXOMIS15EEG72JvebELvx6lll5z+OfYPCaJ67P8Q/JQwWw6PDgAAAABJRU5ErkJggg=="
+                        loading="lazy"
                       />
                       <p>Sequelize</p>
                     </div>
@@ -348,6 +306,7 @@
                     <div class="icon-animate">
                       <img
                         src="https://sqliteviewer.com/blog/wp-content/uploads/2015/06/sqlite-database.png"
+                        loading="lazy"
                       />
                       <p>SQlite</p>
                     </div>
@@ -358,6 +317,7 @@
                     <div class="icon-animate">
                       <img
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png"
+                        loading="lazy"
                       />
                       <p>React</p>
                     </div>
@@ -368,6 +328,7 @@
                     <div class="icon-animate">
                       <img
                         src="https://w1.pngwing.com/pngs/885/534/png-transparent-green-grass-nodejs-javascript-react-mean-angularjs-logo-symbol-thumbnail.png"
+                        loading="lazy"
                       />
                       <p>Node JS</p>
                     </div>
@@ -378,6 +339,7 @@
                     <div class="icon-animate">
                       <img
                         src="https://cdn.iconscout.com/icon/free/png-256/npm-3-1175132.png"
+                        loading="lazy"
                       />
                       <p>npm</p>
                     </div>
@@ -388,6 +350,7 @@
                     <div class="icon-animate">
                       <img
                         src="https://raw.githubusercontent.com/mhxion/awesome-discord-communities/master/images/server_icons/c_plus_plus_help.webp"
+                        loading="lazy"
                       />
                       <p class="mb-2">C++</p>
                     </div>
@@ -398,6 +361,7 @@
                     <div class="icon-animate">
                       <img
                         src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png"
+                        loading="lazy"
                       />
                       <p>C#</p>
                     </div>
@@ -408,6 +372,7 @@
                     <div class="icon-animate">
                       <img
                         src="https://www.fluttericon.com/logo_dart_192px.svg"
+                        loading="lazy"
                       />
                       <p>Flutter</p>
                     </div>
@@ -418,6 +383,7 @@
                     <div class="icon-animate">
                       <img
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/1024px-Ruby_logo.svg.png"
+                        loading="lazy"
                       />
                       <p>Ruby</p>
                     </div>
@@ -428,6 +394,7 @@
                     <div class="icon-animate">
                       <img
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png"
+                        loading="lazy"
                       />
                       <p>Python</p>
                     </div>
@@ -475,7 +442,9 @@
                 <div class="col-6 col-md-4">
                   <!-- Add in card for app project -->
                   <div class="flex-shrink-0 my-3">
-                    <span class="text-primary">Spring 2021</span>
+                    <span class="text-primary text-sm fw-normal"
+                      >Spring 2021</span
+                    >
                   </div>
                 </div>
               </div>
@@ -539,7 +508,9 @@
                     </a>
                   </div>
                   <div class="flex-shrink-0 my-3">
-                    <span class="text-primary">Spring 2022</span>
+                    <span class="text-primary text-sm fw-normal"
+                      >Spring 2022</span
+                    >
                   </div>
                 </div>
 
@@ -689,7 +660,9 @@
                     </a>
                   </div>
                   <div class="flex-shrink-0 mb-3">
-                    <span class="text-primary">Spring 2021</span>
+                    <span class="text-primary text-sm fw-normal"
+                      >Spring 2021</span
+                    >
                   </div>
                 </div>
               </div>
@@ -706,27 +679,29 @@
               class="d-flex flex-column flex-md-row justify-content-between mb-5"
             >
               <div class="flex-grow-1">
-                <h3 class="mb-0">University of Texas - Rio Grande Valley</h3>
-                <div class="subheading text-secondary mb-3">
+                <h4 class="mb-0">University of Texas - Rio Grande Valley</h4>
+                <div class="edu-subheading text-secondary mb-3">
                   Bachelor of Science, Computer Science
                 </div>
                 <p>Cum Laude; Dean's List: Fall 2020</p>
-                <p>
+                <p class="text-sm">
                   Relevant Coursework: Prog in UNIX/Linux Envr; Mathematical
                   Foundation of CS; Algorithms & Data Structures; Obj Oriented
                   Prog in C#; Automata; Database Design & Implement; Internet
                   Programming & Software Engineering I & II
                 </p>
                 <p>GPA: 3.53</p>
-              </div>
-              <div class="flex-shrink-0">
-                <span class="text-primary">August 2019 - July 2021</span>
+                <div class="flex-shrink-0 mb-3">
+                  <span class="text-primary text-sm fw-normal"
+                    >August 2019 - July 2021</span
+                  >
+                </div>
               </div>
             </div>
             <div class="d-flex flex-column flex-md-row justify-content-between">
               <div class="flex-grow-1">
-                <h3 class="mb-0">South Texas College</h3>
-                <div class="subheading text-secondary mb-3">
+                <h4 class="mb-0">South Texas College</h4>
+                <div class="edu-subheading text-secondary mb-3">
                   Associate of Science, Computer Science
                 </div>
                 <p>
@@ -734,9 +709,11 @@
                   President’s Honor Roll: Fall 2018
                 </p>
                 <p>GPA: 3.69</p>
-              </div>
-              <div class="flex-shrink-0">
-                <span class="text-primary">August 2017 - August 2019</span>
+                <div class="flex-shrink-0 mb-3">
+                  <span class="text-primary text-sm fw-normal"
+                    >August 2017 - August 2019</span
+                  >
+                </div>
               </div>
             </div>
           </div>
@@ -747,7 +724,7 @@
         <section class="resume-section" id="interests">
           <div class="resume-section-content">
             <h2 class="text-primary mb-1">Interests</h2>
-            <p class="mb-4">
+            <p class="fw-normal mb-4">
               Most of my hobbies involve exercising my creative ability and
               willingness to learn new skills. I try to improve my skills each
               time I create something new.
@@ -759,7 +736,7 @@
               <div class="col-6 col-sm-4 interest icon-container">
                 <span class="mb-0 subheading">
                   <span class="interests-icons icon-animate"
-                    ><i class="fa-solid fa-pencil"></i
+                    ><i class="fa-solid text-primary fa-pencil"></i
                   ></span>
                   Writing
                 </span>
@@ -773,7 +750,7 @@
               <div class="col-6 col-sm-4 interest icon-container">
                 <span class="mb-0 subheading">
                   <span class="interests-icons icon-animate"
-                    ><i class="fa-solid fa-paintbrush"></i
+                    ><i class="fa-solid text-primary fa-paintbrush"></i
                   ></span>
                   Drawing</span
                 >
@@ -787,7 +764,7 @@
               <div class="col-6 col-sm-4 interest icon-container">
                 <span class="mb-0 subheading">
                   <span class="interests-icons icon-animate"
-                    ><i class="fa-solid fa-utensils"></i
+                    ><i class="fa-solid text-primary fa-utensils"></i
                   ></span>
                   Cooking</span
                 >
@@ -801,7 +778,7 @@
               <div class="col-6 col-sm-4 interest icon-container">
                 <span class="mb-0 subheading">
                   <span class="interests-icons icon-animate"
-                    ><i class="fa-solid fa-code"></i
+                    ><i class="fa-solid text-primary fa-code"></i
                   ></span>
                   Programming</span
                 >
@@ -815,7 +792,7 @@
               <div class="col-6 col-sm-4 interest icon-container">
                 <span class="mb-0 subheading">
                   <span class="interests-icons icon-animate"
-                    ><i class="fa-solid fa-gamepad"></i
+                    ><i class="fa-solid text-primary fa-gamepad"></i
                   ></span>
                   Gaming</span
                 >
@@ -834,7 +811,7 @@
               <div class="col-6 col-sm-4 interest icon-container">
                 <span class="mb-0 subheading">
                   <span class="interests-icons icon-animate"
-                    ><i class="fa-solid fa-atom"></i
+                    ><i class="fa-solid text-primary fa-atom"></i
                   ></span>
                   Science</span
                 >
@@ -848,7 +825,7 @@
               <div class="col-6 col-sm-4 interest icon-container">
                 <span class="mb-0 subheading">
                   <span class="interests-icons icon-animate"
-                    ><i class="fa-solid fa-ticket"></i
+                    ><i class="fa-solid text-primary fa-ticket"></i
                   ></span>
                   Movies</span
                 >
@@ -863,7 +840,7 @@
               <div class="col-6 col-sm-4 interest icon-container">
                 <span class="mb-0 subheading">
                   <span class="interests-icons icon-animate"
-                    ><i class="fa-solid fa-rocket"></i
+                    ><i class="fa-solid text-primary fa-rocket"></i
                   ></span>
                   Space</span
                 >
@@ -925,7 +902,8 @@
                   />
                 </fieldset>
                 <input
-                  class="bg-secondary text-primary"
+                  id="contact-button"
+                  class="bg-transparent text-primary border-primary rounded"
                   type="submit"
                   value="Submit"
                 />

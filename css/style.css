@@ -1,14 +1,19 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
-/* Padding below the footer and lighter body text */
 body {
   color: #5a5a5a;
+  font-family: "open sans", sans-serif;
+  font-weight: 300;
+}
+
+h1 .h1 {
+  text-transform: uppercase;
 }
 
 .text-title {
   /* use google font */
-  font-family: "Saira Extra Condensed", sans-serif;
-  font-weight: 600;
+  font-family: "montserrat", sans-serif;
+  font-weight: 673;
 }
 
 .center {
@@ -17,19 +22,11 @@ body {
   justify-content: center;
 }
 
-@media (max-width: 576px) {
-  .text-sm {
-    font-size: 0.8rem;
-  }
-}
-
 /* Customize the navbar
 -------------------------------------------------- */
 .navbar-name {
   color: #fff;
   font-weight: 500;
-  font-style: bold;
-  text-transform: uppercase;
 }
 
 /* Size the navbar image on small to medium screen */
@@ -49,6 +46,10 @@ body {
 
 /* Skills
 -------------------------------------------------- */
+.icon-container p {
+  font-size: 0.9rem;
+}
+
 .skills-icons-img {
   height: 1.7rem;
   width: 1.7rem;
@@ -99,6 +100,7 @@ ul.skillsGrid {
 
 .knowledge-subtitle {
   font-size: 1.1rem;
+  font-weight: 400;
 }
 
 /* Experience
@@ -163,8 +165,8 @@ ul.skillsGrid {
   margin-right: 0.25em;
 }
 
-.interest:hover .interests-icons {
-  color: var(--bs-primary);
+.interest p {
+  color: rgb(230, 230, 230);
 }
 
 /* Contact
@@ -172,6 +174,19 @@ ul.skillsGrid {
 #contact-button {
   display: inline-block;
   margin: 0 auto;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0) 50%,
+    var(--bs-primary) 50%
+  );
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.4s ease;
+}
+
+#contact-button:hover {
+  background-position: left bottom;
+  color: var(--bs-dark) !important;
 }
 
 /* Contact Form */
@@ -287,5 +302,17 @@ ul.skillsGrid {
 @media screen and (min-width: 556px) and (max-width: 1256px) {
   .card-title {
     font-size: 0.2vmin;
+  }
+}
+
+@media (max-width: 576px) {
+  .text-sm {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .icon-container p {
+    font-size: 0.725rem;
   }
 }
