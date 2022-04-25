@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+.bg-light {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-light-rgb), 0.63) !important;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
@@ -151,7 +156,7 @@ h1,
   #sideNav .navbar-brand .img-profile {
     max-width: 10rem;
     max-height: 10rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    border: 0.5rem solid var(--bs-primary);
   }
   #sideNav .navbar-collapse {
     display: flex;
@@ -198,7 +203,6 @@ section.resume-section {
   padding-right: 1rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  max-width: 75rem;
 }
 
 section.resume-section .resume-section-content {
@@ -218,7 +222,7 @@ section.resume-section .resume-section-content {
 @media (min-width: 992px) {
   section.resume-section {
     padding-left: 3rem;
-    padding-right: 3rem;
+    padding-right: 20rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
   }

@@ -38,10 +38,10 @@ function addAnimatedClass() {
   // Adds fade animation to icons when mouse enters icon container
   $(".icon-container").hover(
     function () {
-      $(this).find(".icon-animate").addClass("fa-fade");
+      $(this).find(".icon-animate").addClass("fa-beat-fade");
     },
     function () {
-      $(this).find(".icon-animate").removeClass("fa-fade");
+      $(this).find(".icon-animate").removeClass("fa-beat-fade");
     }
   );
 }

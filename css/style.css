@@ -71,7 +71,7 @@ h1 .h1 {
 }
 
 .skillsGrid li {
-  background-color: var(--bs-light);
+  background-color: var(--bs-white);
   padding: 10px;
   border-radius: 15px;
   height: 78px;
@@ -165,9 +165,9 @@ ul.skillsGrid {
   margin-right: 0.25em;
 }
 
-.interest p {
+/* .interest p {
   color: rgb(230, 230, 230);
-}
+} */
 
 /* Contact
 -------------------------------------------------- */
