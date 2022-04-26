@@ -36,6 +36,12 @@ h1 .h1 {
 
 /* About
 -------------------------------------------------- */
+/* Anime JS */
+.ml2 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
 /* Buttons to skip sections */
 .section-buttons {
   color: #fff;
