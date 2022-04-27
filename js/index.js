@@ -52,6 +52,53 @@ function addAnimatedClass() {
 }
 
 /**
+ * @description: Adds Anime JS animation for nav button icon
+ */
+function navBtnAnime() {
+  var navBtnAnime = anime.timeline({
+    autoplay: false,
+  });
+
+  navBtnAnime
+    .add(
+      {
+        targets: ".nav-btn-top",
+        translateY: [0, 8],
+        rotate: [0, 45],
+        easing: "easeInOutBack",
+        duration: 600,
+      },
+      0
+    )
+    .add(
+      {
+        targets: ".nav-btn-mid",
+        opacity: [1, 0],
+        duration: 170,
+        easing: "linear",
+      },
+      "-=600"
+    )
+    .add(
+      {
+        targets: ".nav-btn-bottom",
+        translateY: [0, -8],
+        rotate: [0, -45],
+        easing: "easeInOutBack",
+        duration: 600,
+      },
+      0
+    );
+
+  document.querySelector(".navbar-toggler").onclick = function () {
+    navBtnAnime.finished.then(() => {
+      navBtnAnime.reverse();
+    });
+    navBtnAnime.play();
+  };
+}
+
+/**
  * @description: Adds Anime JS animation for about page on it's own timeline
  */
 function addAboutAnime() {
@@ -131,3 +178,4 @@ function addAboutAnime() {
 -------------------------------------------------- */
 addAnimatedClass();
 addAboutAnime();
+navBtnAnime();

@@ -34,10 +34,29 @@ h1 .h1 {
   max-width: 30px;
 }
 
+/* Navbar button customization */
+.nav-btn-top,
+.nav-btn-mid,
+.nav-btn-bottom {
+  padding: 0.1rem 1rem;
+  margin: 0.15rem;
+  border-radius: 0.25rem;
+  border: none;
+  background-color: var(--bs-white);
+}
+
 /* About
 -------------------------------------------------- */
 /* Anime JS */
-.ml2 .letter {
+.about-t1-2 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+.about-t1-3 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+.about-t1-4 .letter {
   display: inline-block;
   line-height: 1em;
 }
