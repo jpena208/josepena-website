@@ -458,168 +458,231 @@
             </div>
 
             <!-- Web Development Row -->
-            <div class="row d-flex justify-content-between mb-5">
+            <!-- This is a grid structure that is 2x3 for screens > 768px 
+                 And is 2x2 for screens < 768px
+                 This is for text rows to be equal size, to allow for
+                 content rows to have aligned project cards
+                 Javascript is used to dynamically change the grid structure
+                 and place content in correct project positions
+            -------------------------------------------------- -->
+            <div class="row justify-content-between mb-5">
               <h3 class="text-primary mb-0">Web Development</h3>
-
-              <!-- Text Row 1 -->
-              <div class="text-row row">
-                <div class="col-6 col-md-4">
-                  <div class="subheading text-secondary mb-3">Personal</div>
-                  <p class="text-sm mb-3">
-                    Imported Bootstrap 5 source files to edit SASS for custom
-                    themes. Worked with JS and CSS animations. Created to be
-                    highly responsive for most screen sizes.
-                  </p>
-                </div>
-                <div class="col-6 col-md-4">
-                  <div class="subheading text-secondary mb-3">UTRGV</div>
-                  <p class="text-sm mb-3">
-                    Applied Express framework and Sequelize to create an API
-                    server and relational database. Employed React framework to
-                    build interactive UI components that can communicate with
-                    the backend server.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Content Row 1 -->
-              <div class="content-row row">
-                <!-- Personal -->
-                <div class="col-6 col-md-4 p-0">
-                  <div class="project card my-1 me-md-auto overflow-hidden">
-                    <a
-                      href="https://jpena208.github.io/games-showcase/"
-                      target="_blank"
-                      rel="external"
-                    >
-                      <img
-                        src="public/assets/img/games.png"
-                        class="card-img"
-                        alt="Games showcase image"
-                      />
-                      <div class="center card-img-overlay">
-                        <img
-                          src="public/assets/img/viewProjectButton.png"
-                          class="view-project-btn visually-hidden"
-                          alt="Button to view project"
-                        />
-                        <!-- Keep this for changing button visuals -->
-                        <!-- <span class="center circle">
+              <!-- Large Grid 1 -->
+              <div class="d-none d-md-block container mb-5">
+                <div class="row row-cols-3 gx-0">
+                  <div id="text-md-1" class="col pr-3">
+                    <div id="project-1-text">
+                      <div class="subheading text-secondary mb-3">Personal</div>
+                      <p class="text-sm mb-3">
+                        Imported Bootstrap 5 source files to edit SASS for
+                        custom themes. Worked with JS and CSS animations.
+                        Created to be highly responsive for most screen sizes.
+                      </p>
+                    </div>
+                  </div>
+                  <div id="text-md-2" class="col px-3">
+                    <div id="project-2-text">
+                      <div class="subheading text-secondary mb-3">UTRGV</div>
+                      <p class="text-sm mb-3">
+                        Applied Express framework and Sequelize to create an API
+                        server and relational database. Employed React framework
+                        to build interactive UI components that can communicate
+                        with the backend server.
+                      </p>
+                    </div>
+                  </div>
+                  <div id="text-md-3" class="col px-3">
+                    <!-- <div id="project-3-text">
+                      <div class="subheading text-secondary mb-3">
+                        Example 1
+                      </div>
+                      <p class="text-sm mb-3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Repellendus repellat velit unde nesciunt alias sapiente.
+                        Vel porro quae repudiandae quidem rem, quibusdam nemo
+                        eos laudantium.
+                      </p>
+                    </div> -->
+                  </div>
+                  <div id="content-md-1" class="col">
+                    <div id="project-1-content">
+                      <div class="project card my-1 me-md-auto overflow-hidden">
+                        <a
+                          href="https://jpena208.github.io/games-showcase/"
+                          target="_blank"
+                          rel="external"
+                        >
+                          <img
+                            src="public/assets/img/games.png"
+                            class="card-img"
+                            alt="Games showcase image"
+                          />
+                          <div class="center card-img-overlay">
+                            <img
+                              src="public/assets/img/viewProjectButton.png"
+                              class="view-project-btn visually-hidden"
+                              alt="Button to view project"
+                            />
+                            <!-- Keep this for changing button visuals -->
+                            <!-- <span class="center circle">
                           <h5
                             class="card-title text-center text-white w-50"
                           >
                             View Project
                           </h5>
                         </span> -->
+                          </div>
+                        </a>
                       </div>
-                    </a>
-                  </div>
-                  <div class="flex-shrink-0 my-3">
-                    <span class="text-tertiary text-sm fw-bold"
-                      >Spring 2022</span
-                    >
-                  </div>
-                </div>
-
-                <!-- UTRGV -->
-                <div class="col-6 col-md-4 p-0">
-                  <div class="project card my-1 me-md-auto overflow-hidden">
-                    <!-- <a href="#" target="_blank" rel="external">
-                      <img
-                        src="public/assets/img/profile.png"
-                        class="card-img"
-                        alt="Games showcase image"
-                      />
-                      <div class="center card-img-overlay">
-                        <span class="center circle visually-hidden">
-                          <h5
-                            class="card-title text-center text-white w-50 visually-hidden"
-                          >
-                            View Project
-                          </h5>
-                        </span>
+                      <div class="flex-shrink-0 my-1">
+                        <span class="text-tertiary text-sm fw-bold"
+                          >Spring 2022</span
+                        >
                       </div>
-                    </a> -->
+                    </div>
                   </div>
-                  <div class="flex-shrink-0 my-3">
-                    <!-- <span class="text-primary">Spring 2021</span> -->
+                  <div id="content-md-2" class="col">
+                    <!-- <div id="project-2-content">
+                      <div class="project card my-1 me-md-auto overflow-hidden">
+                        <a
+                          href="https://jpena208.github.io/games-showcase/"
+                          target="_blank"
+                          rel="external"
+                        >
+                          <img
+                            src="https://via.placeholder.com/769C/O https://placeholder.com/"
+                            class="placeholder-glow placeholder card-img"
+                            alt="Games showcase image"
+                          />
+                          <div class="center card-img-overlay">
+                            <img
+                              src="public/assets/img/viewProjectButton.png"
+                              class="view-project-btn visually-hidden"
+                              alt="Button to view project"
+                            />
+                          </div>
+                        </a>
+                      </div>
+                      <div class="flex-shrink-0 my-1">
+                        <span class="text-tertiary text-sm fw-bold"
+                          >Spring 2022</span
+                        >
+                      </div>
+                    </div> -->
+                  </div>
+                  <div id="content-md-3" class="col">
+                    <!-- <div id="project-3-content">
+                      <div class="project card my-1 me-md-auto overflow-hidden">
+                        <a
+                          href="https://jpena208.github.io/games-showcase/"
+                          target="_blank"
+                          rel="external"
+                        >
+                          <img
+                            src="https://via.placeholder.com/769C/O https://placeholder.com/"
+                            class="placeholder-glow placeholder card-img"
+                            alt="Games showcase image"
+                          />
+                          <div class="center card-img-overlay">
+                            <img
+                              src="public/assets/img/viewProjectButton.png"
+                              class="view-project-btn visually-hidden"
+                              alt="Button to view project"
+                            />
+                          </div>
+                        </a>
+                      </div>
+                      <div class="flex-shrink-0 my-1">
+                        <span class="text-tertiary text-sm fw-bold"
+                          >Spring 2022</span
+                        >
+                      </div>
+                    </div> -->
                   </div>
                 </div>
               </div>
 
-              <!-- Next two rows are mobile only
-                  Used when more than two projects are listed 
-              ------------------------------------- -->
-              <!-- Text Row 2 -->
-              <div class="text-row row d-md-none">
-                <div class="col-6 col-md-4">
-                  <!-- <div class="subheading mb-3">Example 1</div>
-                  <p class="text-sm mb-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                    necessitatibus perferendis, voluptatem a voluptatibus libero!
-                  </p> -->
+              <!-- Large Grid 2 -->
+              <!-- <div class="d-none d-md-block container">
+                <div class="row row-cols-3 gx-0">
+                  <div id="text-md-4" class="col pr-3">
+                    <div id="project-4-text">
+                      <div class="subheading text-secondary mb-3">
+                        Example 2
+                      </div>
+                      <p class="text-sm mb-3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Fugiat, similique architecto? Consectetur, ipsum nostrum
+                        pariatur dolorum maiores dolores odio ut laborum id
+                        dolore molestiae incidunt.
+                      </p>
+                    </div>
+                  </div>
+                  <div id="text-md-5 px-3" class="col px-3"></div>
+                  <div id="text-md-6 px-3" class="col px-3"></div>
+                  <div id="content-md-4" class="col">
+                    <div id="project-4-content">
+                      <div class="project card my-1 me-md-auto overflow-hidden">
+                        <a
+                          href="https://jpena208.github.io/games-showcase/"
+                          target="_blank"
+                          rel="external"
+                        >
+                          <img
+                            src="https://via.placeholder.com/769C/O https://placeholder.com/"
+                            class="placeholder-glow placeholder card-img"
+                            alt="Games showcase image"
+                          />
+                          <div class="center card-img-overlay">
+                            <img
+                              src="public/assets/img/viewProjectButton.png"
+                              class="view-project-btn visually-hidden"
+                              alt="Button to view project"
+                            />
+                          </div>
+                        </a>
+                      </div>
+                      <div class="flex-shrink-0 my-1">
+                        <span class="text-tertiary text-sm fw-bold"
+                          >Spring 2022</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div id="content-md-5" class="col"></div>
+                  <div id="content-md-6" class="col"></div>
                 </div>
-                <div class="col-6 col-md-4">
-                  <!-- <div class="subheading mb-3">Example 2</div>
-                  <p class="text-sm mb-3">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Necessitatibus eius neque incidunt voluptates ab esse!
-                  </p> -->
+              </div> -->
+
+              <!-- Small Grid 1 -->
+              <div class="d-md-none container mb-5">
+                <div class="row row-cols-2 gx-0">
+                  <div id="text-1" class="col pr-3"></div>
+                  <div id="text-2" class="col px-3"></div>
+                  <div id="content-1" class="col"></div>
+                  <div id="content-2" class="col"></div>
                 </div>
               </div>
 
-              <!-- Content Row 2 -->
-              <div class="content-row row d-md-none">
-                <!-- Example 1 -->
-                <div class="col-6 col-md-4 p-0">
-                  <div class="project card my-1 me-md-auto overflow-hidden">
-                    <a href="#" target="_blank" rel="external">
-                      <!-- <img
-                        src="https://via.placeholder.com/769C/O https://placeholder.com/"
-                        class="placeholder card-img"
-                        alt="Games showcase image"
-                      />
-                      <div class="center card-img-overlay">
-                        <span class="center circle visually-hidden">
-                          <h5
-                            class="card-title text-center text-white w-50 visually-hidden"
-                          >
-                            View Project
-                          </h5>
-                        </span>
-                      </div> -->
-                    </a>
-                  </div>
-                  <div class="flex-shrink-0 my-3">
-                    <!-- <span class="text-primary">Spring 2021</span> -->
-                  </div>
+              <!-- Small Grid 2 -->
+              <!-- <div class="d-md-none container mb-5">
+                <div class="row row-cols-2 gx-0">
+                  <div id="text-3" class="col pr-3"></div>
+                  <div id="text-4" class="col px-3"></div>
+                  <div id="content-3" class="col"></div>
+                  <div id="content-4" class="col"></div>
                 </div>
+              </div> -->
 
-                <!-- Example -->
-                <div class="col-6 col-md-4 p-0">
-                  <div class="project card my-1 me-md-auto overflow-hidden">
-                    <a href="#" target="_blank" rel="external">
-                      <!-- <img
-                        src="https://via.placeholder.com/769C/O https://placeholder.com/"
-                        class="placeholder-glow placeholder card-img"
-                        alt="Games showcase image"
-                      />
-                      <div class="center card-img-overlay">
-                        <span class="center circle visually-hidden">
-                          <h5
-                            class="card-title text-center text-white w-50 visually-hidden"
-                          >
-                            View Project
-                          </h5>
-                        </span>
-                      </div> -->
-                    </a>
-                  </div>
-                  <div class="flex-shrink-0 my-3">
-                    <!-- <span class="text-primary">Spring 2022</span> -->
-                  </div>
+              <!-- Small Grid 3 -->
+              <!-- <div class="d-md-none container mb-5">
+                <div class="row row-cols-2 gx-0">
+                  <div id="text-5" class="col pr-3"></div>
+                  <div id="text-6" class="col px-3"></div>
+                  <div id="content-5" class="col"></div>
+                  <div id="content-6" class="col"></div>
                 </div>
-              </div>
+              </div> -->
             </div>
 
             <!-- Game Development Row -->

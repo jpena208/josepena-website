@@ -1,17 +1,36 @@
 /* Media Queries
 -------------------------------------------------- */
 /**
- * @description: Media queries for responsiveness
+ * @description: Moves html elements based on screen size
  */
-function mediaQuery() {
-  var mediaQuery = window.matchMedia("(max-width: 768px)");
-  mediaQuery.addEventListener(function (e) {
-    if (e.matches) {
-      // console.log('mobile');
+function swapElementLocations() {
+  var numProjects = 4;
+  var mediaQuery = window.matchMedia("(max-width: 767px)");
+  window.onresize = window.onload = function () {
+    if (mediaQuery.matches) {
+      // Loop for number of projects
+      for (var i = 1; i <= numProjects; i++) {
+        document
+          .getElementById("text-" + i)
+          .appendChild(document.getElementById("project-" + i + "-text"));
+        document
+          .getElementById("content-" + i)
+          .appendChild(document.getElementById("project-" + i + "-content"));
+      }
     } else {
-      // console.log('desktop');
+      for (var i = 0; i < numProjects; i++) {
+        // Loop for number of projects
+        for (var i = 1; i <= numProjects; i++) {
+          document
+            .getElementById("text-md-" + i)
+            .appendChild(document.getElementById("project-" + i + "-text"));
+          document
+            .getElementById("content-md-" + i)
+            .appendChild(document.getElementById("project-" + i + "-content"));
+        }
+      }
     }
-  });
+  };
 }
 
 /* Animations
@@ -176,6 +195,7 @@ function addAboutAnime() {
 
 /* Call Functions
 -------------------------------------------------- */
+swapElementLocations();
 addAnimatedClass();
-addAboutAnime();
 navBtnAnime();
+addAboutAnime();
